@@ -1,5 +1,5 @@
-package com.patito.poo1pract.pruebas;
-import com.patito.poo1pract.personajes.*;
+package edu.escuela.gamepz.pruebas;
+import edu.escuela.gamepz.personajes.*;
 public class PruebaPersonaje{
 	public static void main(String[] args) {
 		Personaje alumno= new Personaje("Kal El");
