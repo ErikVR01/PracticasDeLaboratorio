@@ -20,8 +20,13 @@ public class Personaje{
 		}return{
 			false
 		}
-
 	}
+	
+	public String getDetalle(){
+		return nombre + "\t" edad;
+	}
+
+	
 
 	public String getNombre(){
 		return nombre;
