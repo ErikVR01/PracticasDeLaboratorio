@@ -13,17 +13,14 @@ public class Personaje{
 		return edad;
 	}
 
-	public boolean setNombre(String nombre){
-		if (nombre.length()>5 && nombre.length()>25){
+	public void setNombre(String nombre){
+		if (nombre.length()>5 && nombre.length()<25){
 			this.nombre = nombre;
-			return true
-		}return{
-			false
-		}
+			return true;
 	}
-	
+
 	public String getDetalle(){
-		return nombre + "\t" edad;
+		return nombre + "\t" + edad;
 	}
 
 	
