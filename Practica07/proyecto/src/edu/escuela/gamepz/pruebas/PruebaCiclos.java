@@ -15,6 +15,10 @@ public class PruebaCiclos{
 			System.out.println(n);
 			System.out.println(m);
 		}
+
+		for (int i=0; i=n ; ) {
+			
+		}
 			
 	}
 		
