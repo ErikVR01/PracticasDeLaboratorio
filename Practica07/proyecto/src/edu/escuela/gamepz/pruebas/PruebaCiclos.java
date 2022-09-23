@@ -6,7 +6,10 @@ Public class PruebaCiclos{
 	
 	int n=0;
 	int m=0;
-	while (n <= m){
-		
+	while (n >= m){
+		n=random.nextInt(0 - 100 + 1)
+		m=random.nextInt(0 - 100 + 1)
+		System.out.println(n);
+		System.out.println(m);
 	}
 }
