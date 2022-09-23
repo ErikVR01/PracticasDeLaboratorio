@@ -3,9 +3,8 @@ public class Personaje{
 	private String nombre;
 	private int edad;
 
-	public Personaje(String nombre, int edad){
+	public Personaje(String nombre){
 		this.nombre=nombre;
-		this.edad=edad;
 
 	}
 
@@ -16,6 +15,7 @@ public class Personaje{
 	public void setNombre(String nombre){
 		if (nombre.length()>5 && nombre.length()<25){
 			this.nombre = nombre;
+		}
 	}
 
 	public String getDetalle(){
