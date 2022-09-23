@@ -7,7 +7,7 @@ public class Personaje{
 		this.nombre=nombre;
 
 	}
-
+	
 	public int getEdad(){
 		return edad;
 	}
