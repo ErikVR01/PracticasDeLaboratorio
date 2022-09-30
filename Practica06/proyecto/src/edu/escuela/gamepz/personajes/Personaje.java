@@ -23,6 +23,7 @@ public class Personaje{
 		return nombre + "\t" + edad;
 	}
 
+
 	
 
 	public String getNombre(){
