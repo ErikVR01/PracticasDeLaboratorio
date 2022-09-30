@@ -4,11 +4,6 @@ public class Series{
 	private int y;
 	private int r;
 
-	public Series(int x, int y, int r){
-		this.x=x;
-		this.y=y;
-		this.r=r;
-	}
 
 	public int getX(){
 		return x;
@@ -21,5 +16,7 @@ public class Series{
 	public int getR(){
 		return  r;
 	}
+
+
 
 }
