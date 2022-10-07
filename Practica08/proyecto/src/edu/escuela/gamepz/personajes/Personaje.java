@@ -33,9 +33,20 @@ public class Personaje{
 	}
 
 	public static void decVida(){
+		vida=vida-1;
+	}
+
+	public static void decVida(int dec){
 
 	}
 
+	public static void addVida(){
+		vida=vida+1;
+	}
+
+	public static void addVida(int incvida){
+
+	}
 	
 
 	/*
