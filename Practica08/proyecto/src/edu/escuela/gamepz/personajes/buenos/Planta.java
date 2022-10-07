@@ -5,6 +5,7 @@ public class Planta extends Personaje{
         return escudo;
     }
 
+	//constructores
     public Planta(String nombre, int vida, char escudo){
         super(nombre, vida);
         this.escudo = escudo;
@@ -29,6 +30,7 @@ public class Planta extends Personaje{
         return super.getDetalle() + " " + escudo;
     }
 
+    //Decrementar
     public static void decVida(){
     	if (escudo == 'A'){
             super.decVida(2);
@@ -40,6 +42,23 @@ public class Planta extends Personaje{
     public static void decVida(int dec){
         if (escudo == 'A'){
             super.decVida(dec*2);
+        } else {
+            super.decVida();
+        }
+    }
+
+    //incrementar
+    public void addVida(){
+        if (escudo == 'A'){
+            super.addVida(2);
+        } else {
+            super.decVida();
+        }
+    }
+
+    public void addVida(int incvida){
+        if (escudo == 'A'){
+            super.addVida(incvida*2);
         } else {
             super.decVida();
         }
