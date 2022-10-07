@@ -51,10 +51,11 @@ public class Personaje{
 	}
 
 	public void addVida(int incvida){
-		if ((vida+incvida > 0) && (vida+incvida < 100)){
+		if ((vida+incvida > 0) && (vida+incvida < 100)) {
             vida = vida + incvida;
         }
 	}
+}
 	
 
 	/*
