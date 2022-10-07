@@ -1,3 +1,5 @@
+package edu.escuela.gamepz.personajes.buenos;
+import edu.escuela.gamepz.personajes.Personaje;
 public class Planta extends Personaje{
 	public char escudo;
     
@@ -31,7 +33,7 @@ public class Planta extends Personaje{
     }
 
     //Decrementar
-    public static void decVida(){
+    public void decVida(){
     	if (escudo == 'A'){
             super.decVida(2);
         } else{
@@ -39,7 +41,7 @@ public class Planta extends Personaje{
         }
     }
 
-    public static void decVida(int dec){
+    public void decVida(int dec){
         if (escudo == 'A'){
             super.decVida(dec*2);
         } else {

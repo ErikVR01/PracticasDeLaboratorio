@@ -1,10 +1,12 @@
+package edu.escuela.gamepz.personajes.malos;
+import edu.escuela.gamepz.personajes.Personaje;
 public class Zombie extends Personaje{
 	public boolean ataque;
 
     public boolean getAtaque(){
         return ataque;
     }
-    
+
 	//constructores
     public Zombie(String nombre, int vida, boolean ataque){
     	super(nombre, vida);
@@ -20,6 +22,12 @@ public class Zombie extends Personaje{
     	super(nombre, 3);
         ataque = false;
     }
+
+    public String getDetalle(){
+        return super.getDetalle() +" "+ ataque;
+    }
+
+
 
 
 

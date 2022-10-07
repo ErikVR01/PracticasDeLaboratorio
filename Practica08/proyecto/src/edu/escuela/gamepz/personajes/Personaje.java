@@ -14,7 +14,7 @@ public class Personaje{
 	}
 	
 	public int getVida(){
-		return edad;
+		return vida;
 	}
 
 	public void setNombre(String nombre){
@@ -24,7 +24,7 @@ public class Personaje{
 	}
 
 	public String getDetalle(){
-		return nombre + "\t" + edad;
+		return nombre + "\t" + vida;
 	}
 
 	
@@ -32,25 +32,25 @@ public class Personaje{
 		return nombre;
 	}
 
-	public static void decVida(){
+	public void decVida(){
 		if ((vida-1 >0) & (vida-1 < 100 )) {
 			vida=vida-1;
 		}
 	}
 
-	public static void decVida(int dec){
+	public void decVida(int dec){
 		if ((vida-dec >0) & (vida-dec < 100 )) {
 			vida=vida-dec;
 		}
 	}
 
-	public static void addVida(){
+	public void addVida(){
 		if ((vida+1 > 0) && (vida+1 < 100)) {
 			vida = vida + 1;
 		}
 	}
 
-	public static void addVida(int incvida){
+	public void addVida(int incvida){
 		if ((vida+incvida > 0) && (vida+incvida < 100)){
             vida = vida + incvida;
         }
