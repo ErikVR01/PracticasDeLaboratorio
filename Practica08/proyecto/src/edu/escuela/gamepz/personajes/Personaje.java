@@ -3,9 +3,14 @@ public class Personaje{
 	private String nombre;
 	private int vida;
 
+	public Personaje(String nombre, int vida){
+		this.nombre=nombre;
+		this.vida=vida;
+
+	}
 	public Personaje(String nombre){
 		this.nombre=nombre;
-
+		vida=3;
 	}
 	
 	public int getVida(){
@@ -23,11 +28,17 @@ public class Personaje{
 	}
 
 	
-
 	public String getNombre(){
 		return nombre;
 	}
 
+	public static void decVida(){
+
+	}
+
+	
+
+	/*
 	public void saludar(){
 		System.out.println("Hola Alumno de POO " +nombre);
 	}
@@ -48,3 +59,4 @@ public class Personaje{
 		}return false;
 	}
 }
+*/
