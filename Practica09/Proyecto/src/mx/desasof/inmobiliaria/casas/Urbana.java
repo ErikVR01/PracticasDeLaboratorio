@@ -1,3 +1,4 @@
+package mx.desasof.inmobiliaria.casas;
 public class Urbana extends Casa{
 	private int banios;
 
@@ -24,7 +25,7 @@ public class Urbana extends Casa{
 	}
 
 	public String toString(){
-		return tipo + " " + hab + " " + costo;
+		return super.toString() + " " + banios;
 	}
 
 

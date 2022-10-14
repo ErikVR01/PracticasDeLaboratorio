@@ -11,5 +11,7 @@ public class PruebaCasa{
 		casas [6]= new Casa ("Estandar");
 		casas [7]= new Campo ("Cazador", 4, 15000, 3f , 5f);
 		casas [8]= new Urbana ("Residencia", 5);
+
+		int i = 0
 	}
 }
