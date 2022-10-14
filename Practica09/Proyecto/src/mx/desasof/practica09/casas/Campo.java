@@ -1,6 +1,6 @@
 public class Campo extends Casa{
 	
-	float piscina [2]= new piscina();
+	float piscina []= new piscina();
 
 	public Campo(String tipo, int hab, float costo, float largo, float ancho){
 		super(tipo, hab, costo);
@@ -10,7 +10,7 @@ public class Campo extends Casa{
 	}
 
 	public int hashcode(){
-		super.hashcode()*(int)ancho*(int)largo/5;
+		super.hashCode()*(int)ancho*(int)largo/5;
 	}
 
 	public boolean equals(Object ob){

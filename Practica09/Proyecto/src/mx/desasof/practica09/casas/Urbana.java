@@ -1,4 +1,5 @@
 public class Urbana extends Casa{
+	private int banios;
 
 	public Urbana(String tipo, int hab, float costo){
 		super(tipo, hab, costo);
@@ -10,7 +11,7 @@ public class Urbana extends Casa{
 	}
 
 	public int hashcode(){
-
+		return super.hashCode()*banios*23;
 	}
 
 	public boolean equals(Object ov){
