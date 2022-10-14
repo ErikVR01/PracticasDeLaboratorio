@@ -16,7 +16,8 @@ public class Casa{
 	}
 
 	public int hashcode(){
-		return tipo.hashcode()*hab*costo;
+		int tipo= tipo.hashcode()*(int)hab*(int)costo;
+		return tipo;
 	}
 
 

@@ -4,17 +4,17 @@ public class Campo extends Casa{
 
 	public Campo(String tipo, int hab, float costo, float largo, float ancho){
 		super(tipo, hab, costo);
-		ancho=0
-		largo=1
+		ancho=0;
+		largo=1;
 
 	}
 
 	public int hashcode(){
-		super.hashcode()*(int)ancho+(int)largo/5;
+		super.hashcode()*(int)ancho*(int)largo/5;
 	}
 
 	public boolean equals(Object ob){
-		super.equals(ob) && ob instanceof Campo;
+		return super.equals(ob) && ob instanceof Campo;
 	}
 
 	public String toString(){
