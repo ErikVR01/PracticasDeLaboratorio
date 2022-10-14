@@ -6,7 +6,7 @@ public class Campo extends Casa{
 	public Campo(String tipo, int hab, float costo, float largo, float ancho){
 		super(tipo, hab, costo);
 		piscina[0]= ancho;
-		piscina[1]=largo;
+		piscina[1]= largo;
 	}
 
 	public int hashCode(){
@@ -14,7 +14,12 @@ public class Campo extends Casa{
 	}
 
 	public boolean equals(Object ob){
-		return super.equals(ob) && ob instanceof Campo;
+		if (super.equals(ob)) {
+			if (ob instanceof Campo) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public String toString(){

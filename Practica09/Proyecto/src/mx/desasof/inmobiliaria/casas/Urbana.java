@@ -15,7 +15,12 @@ public class Urbana extends Casa{
 	}
 
 	public boolean equals(Object ov){
-		return super.equals(ov) && ov instanceof Urbana;
+		if (super.equals(ov)) {
+			if (ov instanceof Urbana) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public String toString(){
