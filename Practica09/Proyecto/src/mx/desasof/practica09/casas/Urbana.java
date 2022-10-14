@@ -10,7 +10,7 @@ public class Urbana extends Casa{
 		this.banios=banios;
 	}
 
-	public int hashcode(){
+	public int hashCode(){
 		return super.hashCode()*banios*23;
 	}
 

@@ -15,7 +15,7 @@ public class Casa{
 		costo=2000000;
 	}
 
-	public int hashcode(){
+	public int hashCode(){
 	return (tipo.hashCode()*hab)*((int)costo);
 	}
 
