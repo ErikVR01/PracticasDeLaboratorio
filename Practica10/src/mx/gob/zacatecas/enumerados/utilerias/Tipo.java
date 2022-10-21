@@ -1,0 +1,16 @@
+public enum Tipo{
+	SERVER("Servidor"),
+	WORKSTATION("Estacion de trabajo"),
+	DESKTOP("Escritorio"),
+	LAPTOP("Portatil");
+
+	String type;
+
+	private Tipo(String type){
+		this.type=type;
+	}
+
+	public String getType(){
+		return type;
+	}
+}
