@@ -1,4 +1,6 @@
-package mx.gob.zacatecas.enumerados.utilerias;
+package mx.gob.zacatecas.enumerados.equipos;
+import mx.gob.zacatecas.enumerados.utilerias.*;
+
 public class Computadora{
 	String marca;
 	Tipo tipo;
