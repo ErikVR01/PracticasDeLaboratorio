@@ -1,6 +1,7 @@
 package mx.gob.zacatecas.enumerados.pruebas;
 import mx.gob.zacatecas.enumerados.utilerias.*;
 import mx.gob.zacatecas.enumerados.equipos.*;
+
 public class PruebaComputadora{
 	public static void main(String[] args) {
 		Computadora comp1 = Computadora("Asus", Memoria.DDR);
