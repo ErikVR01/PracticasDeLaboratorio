@@ -9,6 +9,6 @@ public class Smallfactor extends Computadora{
 	}
 
 	public String toString(){
-		return super.toString() + "" + nvram;
+		return super.toString() + " " + nvram;
 	}
 }
