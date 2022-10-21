@@ -1,9 +1,9 @@
 package mx.gob.zacatecas.enumerados.utilerias;
 public enum Memoria{
-	DDR("Memoria RAM", 166, 30),
-	DDR2("Laptop", 240, 35),
-	DDR3("Laptop nueva", 533, 40),
-	DDR4("Gamer", 1600, 40);
+	DDR("Memoria RAM", 166f, 30),
+	DDR2("Laptop", 240f, 35),
+	DDR3("Laptop nueva", 533f, 40),
+	DDR4("Gamer", 1600f, 40);
 
 	String tipo;
 	float vel;
