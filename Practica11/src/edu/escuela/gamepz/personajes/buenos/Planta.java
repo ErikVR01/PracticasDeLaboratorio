@@ -34,19 +34,11 @@ public class Planta extends Personaje{
 
     //Decrementar
     public void decVida(){
-    	if (escudo == 'A'){
-            super.decVida(2);
-        } else{
-        	super.decVida();
-        }
+    	setVida(vida-escudo.getNivel());
     }
 
     public void decVida(int dec){
-        if (escudo == 'A'){
-            super.decVida(dec*2);
-        } else {
-            super.decVida();
-        }
+        setVida(vida-escudo.getNivel()*dec);
     }
 
     //incrementar

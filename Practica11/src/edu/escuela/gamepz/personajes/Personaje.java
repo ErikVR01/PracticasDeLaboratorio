@@ -17,6 +17,21 @@ public abstract class Personaje{
 		return vida;
 	}
 
+	public boolean setVida(int edad){
+		if (vida>0) {
+			if (vida<120){
+			
+				this.vida=vida;
+				return true;
+
+			}else{
+				
+				return false;
+
+			}
+		}return false;
+	}
+
 	public void setNombre(String nombre){
 		if (nombre.length()>5 && nombre.length()<25){
 			this.nombre = nombre;
@@ -34,32 +49,10 @@ public abstract class Personaje{
 
 	public abstract void decVida();
 
-	public void decVida(int dec);
+	public abstract void decVida(int dec);
 
 	public abstract void addVida();
 
-	public void addVida(int incvida);
+	public abstract void addVida(int incvida);
 }
 	
-
-	/*
-	public void saludar(){
-		System.out.println("Hola Alumno de POO " +nombre);
-	}
-
-
-	public boolean setEdad(int edad){
-		if (edad>0) {
-			if (edad<120){
-			
-				this.edad=edad;
-				return true;
-
-			}else{
-				
-				return false;
-
-			}
-		}return false;
-	}
-*/
