@@ -34,19 +34,11 @@ public abstract class Personaje{
 
 	public abstract void decVida();
 
-	public void decVida(int dec){
-		if ((vida-dec >0) & (vida-dec < 100 )) {
-			vida=vida-dec;
-		}
-	}
+	public void decVida(int dec);
 
 	public abstract void addVida();
 
-	public void addVida(int incvida){
-		if ((vida+incvida > 0) && (vida+incvida < 100)) {
-            vida = vida + incvida;
-        }
-	}
+	public void addVida(int incvida);
 }
 	
 
