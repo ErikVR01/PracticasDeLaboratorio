@@ -19,7 +19,7 @@ public abstract class Personaje{
 
 	public boolean setVida(int edad){
 		if (vida>0) {
-			if (vida<120){
+			if (vida<99){
 			
 				this.vida=vida;
 				return true;
