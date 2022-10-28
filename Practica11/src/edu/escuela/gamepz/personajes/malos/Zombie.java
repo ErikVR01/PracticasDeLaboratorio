@@ -24,45 +24,45 @@ public class Zombie extends Personaje implements Muerto{
     }
 
     public String toString(){
-        return this.toString() +" "+ ataque;
+        return super.toString() +" "+ ataque;
     }
 
     //Decrementar
     public void decVida(){
         if (ataque == false){
-            this.decVida(3);
+            decVida(3);
         }
         else if (ataque == true){
-            this.decVida(2);
+            decVida(2);
         }
     }
 
     public void decVida(int dec){
         if (ataque == false){
-            this.decVida(dec*3);
+            decVida(dec*3);
         }
         else if (ataque == true){
-            this.decVida(dec*2);
+            decVida(dec*2);
         }
-    }
 
+    }
     //Incrementar
     public void addVida(){
         if (ataque == false){
-            this.addVida(0);
+            addVida(0);
         }
         else if (ataque == true){
-            this.addVida(0);
+            addVida(0);
         }
 
     }
 
     public void addVida(int vida){
         if (ataque == true){
-            this.addVida(vida *3);
+            addVida(vida *3);
         }
         else if (ataque == false){
-            this.addVida(0);
+            addVida(0);
         }
     }
 
