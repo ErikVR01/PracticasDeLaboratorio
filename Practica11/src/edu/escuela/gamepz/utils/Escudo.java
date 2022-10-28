@@ -5,4 +5,8 @@ public enum Escudo{
 	NULO(3);
 
 	int nivel;
+
+	private Escudo(int nivel){
+		this.nivel=nivel;
+	}
 }
