@@ -28,6 +28,7 @@ public class PruebaHerencia{
             if (p instanceof Zombie){
                 Zombie tmp = (Zombie) p;
                 System.out.println("Soy zombie "+ tmp.getAtaque());
+                tmp.comer();
                 tmp.decVida(al);
             }
             System.out.println(al + "\n" + p.toString() + "\n");
