@@ -24,7 +24,7 @@ public class Zombie extends Personaje{
     }
 
     public String getDetalle(){
-        return super.getDetalle() +" "+ ataque;
+        return super.toString() +" "+ ataque;
     }
 
     //Decrementar
