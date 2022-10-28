@@ -3,29 +3,29 @@ import edu.escuela.gamepz.personajes.Personaje;
 import edu.escuela.gamepz.utils.*;
 
 public class Planta extends Personaje{
-	public Escudo escudo;
+	private Escudo escudo;
     
-    public char getEscudo(){
+    public Escudo getEscudo(){
         return escudo;
     }
 
 	//constructores
-    public Planta(String nombre, int vida, char escudo){
+    public Planta(String nombre, int vida, Escudo escudo){
         super(nombre, vida);
         this.escudo = escudo;
     }
 
-    public Planta(String nombre, char escudo){
+    public Planta(String nombre, Escudo escudo){
         super(nombre, 3);
         this.escudo = escudo;
     }
 
-    public Planta(String nombre, int vida,){
-        super(nombre, vida, Escudo.NULO);
+    public Planta(String nombre, int vida){
+        this(nombre, vida, Escudo.NULO);
     }
 
-    public Planta(String nombre, Escudo.NULO){
-        super(nombre, 3, Escudo.NULO);
+    public Planta(String nombre){
+        this(nombre, 3, Escudo.NULO);
     }
 
     public String toString(){
@@ -43,19 +43,11 @@ public class Planta extends Personaje{
 
     //incrementar
     public void addVida(){
-        if (escudo == 'A'){
-            super.addVida(2);
-        } else {
-            super.decVida();
-        }
+        setVida(vida+escudo.getNivel());
     }
 
     public void addVida(int incvida){
-        if (escudo == 'A'){
-            super.addVida(incvida*2);
-        } else {
-            super.decVida();
-        }
+        setVida(vida+escudo.getNivel()*incvida);
     }
 
 
