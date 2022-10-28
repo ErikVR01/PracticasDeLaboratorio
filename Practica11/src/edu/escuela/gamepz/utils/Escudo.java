@@ -4,5 +4,5 @@ public enum Escudo{
 	BAJO(2),
 	NULO(3);
 
-	
+	int nivel;
 }
