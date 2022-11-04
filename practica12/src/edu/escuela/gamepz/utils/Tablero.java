@@ -12,9 +12,10 @@ public class Tablero{
 			if (tmp == null) {
 				System.out.println(contador + " - - -");
 			}else{
-				System.out.println(contador + personajes[]);
+				System.out.println(contador + " " + tmp);
 			}
+			contador++;
 		}
-		
+		System.out.println("Fin *** Contenido de arreglo en tablero\n");
 	}
 }
