@@ -4,7 +4,7 @@ public class PersException extends Exception{
 	private int pos;
 
 	public PersException(String msg, int pos){
-		this.msg=msg;
+		super(msg);
 		this.pos=pos;
 	}
 
