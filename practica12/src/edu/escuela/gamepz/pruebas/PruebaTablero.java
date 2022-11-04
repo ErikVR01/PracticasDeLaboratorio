@@ -13,7 +13,13 @@ public class PruebaTablero{
 
         for (Personaje p : datos ) {
         	int pos = (int)(Math.random()*20-5);
-
+        	try{
+        		Tablero.insertar(p,pos);
+        	}catch(PersException e){
+        		System.err.println(e.getMessage() + e.getPos());
+        	}
         }
+
+        Tablero.mostrar()
 	}
 }
