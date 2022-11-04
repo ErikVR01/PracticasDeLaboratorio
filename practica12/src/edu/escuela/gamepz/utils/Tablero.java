@@ -7,10 +7,14 @@ public class Tablero{
 
 	public void mostrar(){
 		System.out.println("\nInicio *** Contenido de arreglo en tablero");
+		int contador=0;
 		for (Personaje tmp : personajes ) {
 			if (tmp == null) {
-				System.out.println(personajes[] + " - - -");
+				System.out.println(contador + " - - -");
+			}else{
+				System.out.println(contador + personajes[]);
 			}
 		}
+		
 	}
 }
