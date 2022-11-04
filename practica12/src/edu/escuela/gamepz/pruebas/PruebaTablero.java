@@ -10,5 +10,10 @@ public class PruebaTablero{
         Zombie zom02 = new Zombie("Josseline", true);
         Zombie zom03 = new Zombie("Eduardo");
         Personaje[] datos = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
+
+        for (Personaje p : datos ) {
+        	int pos = (int)(Math.random()*20-5);
+
+        }
 	}
 }
