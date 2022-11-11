@@ -35,7 +35,7 @@ public class Tablero{
 		personajes[pos]=null;
 	}
 
-	public int genVida(){
+	public static int genVida(){
 		int x= (int)(Math.random()*10+1);
 		return x;
 	}

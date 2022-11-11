@@ -14,11 +14,11 @@ import edu.escuela.gamepz.utils.Tablero;
 public class PruebaColeccion{
 	public static void main(String[] args) {
 		Personaje[] datos = {
-            new Planta("Fabian", Tablero.genVida()), 
+            new Planta("Fabian", Tablero.genVida(), Escudo.MEDIO), 
             new Zombie("Bianca",Tablero.genVida()),
-            new Planta("Fabian", Tablero.genVida(), Escudo.MEDIO),
-            new Planta("Armando", Tablero.genVida()),
-            new Planta("Bianca", Tablero.genVida(),Escudo.BAJO),
+            new Planta("Fabian", Tablero.genVida()),
+            new Planta("Armando", Tablero.genVida(),Escudo.BAJO),
+            new Planta("Bianca", Tablero.genVida()),
             new Planta("Dayan",Tablero.genVida()),
             new Zombie("Armando", Tablero.genVida(), false),
             new Zombie("Dayan",Tablero.genVida(), true),
@@ -51,4 +51,5 @@ public class PruebaColeccion{
             System.out.println(p);
         }
 
+   }
 }
