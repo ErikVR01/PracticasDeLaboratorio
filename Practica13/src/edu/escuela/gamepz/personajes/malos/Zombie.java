@@ -10,7 +10,7 @@ public class Zombie extends Personaje implements Muerto{
 
 	//constructores
     public Zombie(String nombre, int vida, boolean ataque){
-    	super(nombre, vida);
+    	super(nombre, vida, 0.0f);
         this.ataque=ataque;
     }
 
@@ -21,6 +21,10 @@ public class Zombie extends Personaje implements Muerto{
 
     public Zombie(String nombre){
     	this(nombre, 3, false);
+    }
+
+    public Zombie(String nombre, float size){
+        super(nombre,3,size);
     }
 
     public String toString(){
