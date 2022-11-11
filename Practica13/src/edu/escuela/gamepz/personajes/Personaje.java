@@ -1,17 +1,25 @@
 package edu.escuela.gamepz.personajes;
+import java.text.DecimalFormat;
 public abstract class Personaje{
 	private String nombre;
 	protected int vida;
 	private float size;
 
-	public Personaje(String nombre, int vida){
+	public Personaje(String nombre, int vida, float size){
 		this.nombre=nombre;
 		this.vida=vida;
+
+		if (size==0.0f) {
+			this.size=genSize();
+		} else{
+			this.size = Math.round(size)/100;
+		}
 
 	}
 	public Personaje(String nombre){
 		this.nombre=nombre;
 		vida=3;
+		size=0.0f
 	}
 	
 	public int getVida(){
