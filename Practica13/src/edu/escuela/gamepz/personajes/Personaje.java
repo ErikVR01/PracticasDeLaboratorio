@@ -63,6 +63,12 @@ public abstract class Personaje implements Comparable<Personaje>{
 		return size;
 	}
 
+	public int compareTo(Personaje o){
+		if (this.nombre == o.nombre) {
+			return 0;
+		}
+	}
+
 	public abstract void decVida();
 
 	public abstract void decVida(int dec);
