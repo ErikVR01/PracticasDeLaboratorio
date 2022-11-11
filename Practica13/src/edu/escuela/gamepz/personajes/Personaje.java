@@ -1,6 +1,6 @@
 package edu.escuela.gamepz.personajes;
 import java.text.DecimalFormat;
-public abstract class Personaje{
+public abstract class Personaje implements Comparable<Personaje>{
 	private String nombre;
 	protected int vida;
 	private float size;
@@ -19,7 +19,7 @@ public abstract class Personaje{
 	public Personaje(String nombre){
 		this.nombre=nombre;
 		vida=3;
-		size=0.0f
+		size=0.0f;
 	}
 	
 	public int getVida(){
