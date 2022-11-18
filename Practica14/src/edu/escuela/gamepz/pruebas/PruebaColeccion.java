@@ -78,7 +78,9 @@ public class PruebaColeccion{
    }
 
    private static void mostrarDirectorio(File f){
-
+        for (String tmp : f.list() ) {
+            System.out.println(tmp);
+        }
    }
 
 }
