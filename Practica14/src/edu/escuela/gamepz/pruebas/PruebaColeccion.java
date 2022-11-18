@@ -13,6 +13,13 @@ import edu.escuela.gamepz.utils.Escudo;
 import edu.escuela.gamepz.utils.Tablero;
 public class PruebaColeccion{
 	public static void main(String[] args) {
+        String path = System.getProperty("user.home") + 
+            System.getProperty("file.separator");
+        
+        Scanner s = new Scanner(System.in);
+        String fname = s.nextLine();
+        path += s.nextLine();
+
 		Personaje[] datos = {
             new Planta("Fabian", Tablero.genVida(), Escudo.MEDIO), 
             new Zombie("Bianca",Tablero.genVida()),
