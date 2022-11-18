@@ -3,6 +3,8 @@ import java.util.TreeSet;
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
+import java.io.File;
 
 import edu.escuela.gamepz.personajes.Personaje;
 import edu.escuela.gamepz.personajes.buenos.Planta;
@@ -16,9 +18,19 @@ public class PruebaColeccion{
         String path = System.getProperty("user.home") + 
             System.getProperty("file.separator");
         
+        System.out.println("Escribe el nombre del archivo o directorio");
         Scanner s = new Scanner(System.in);
         String fname = s.nextLine();
         path += s.nextLine();
+        
+        File f = new File(path);
+        if (f.exists()){
+            System.out.println("El archivo si existe");
+            return;
+        }
+        if (f.isDirectory()){
+           // mostrarDirectorio(f);
+        }
 
 		Personaje[] datos = {
             new Planta("Fabian", Tablero.genVida(), Escudo.MEDIO), 
@@ -38,6 +50,8 @@ public class PruebaColeccion{
             ts.add(personaje);
             linked.add(personaje);
         }
+        guardarObjetos(f, ts);
+
 
         System.out.println("---Orden Natural---");
         for (Personaje p : ts) {
@@ -59,4 +73,8 @@ public class PruebaColeccion{
         }
 
    }
+   private static void guardarObjetos(File f, TreeSet ts){
+
+   }
+
 }
