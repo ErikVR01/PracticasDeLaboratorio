@@ -21,15 +21,16 @@ public class PruebaColeccion{
         System.out.println("Escribe el nombre del archivo o directorio");
         Scanner s = new Scanner(System.in);
         String fname = s.nextLine();
-        path += s.nextLine();
+        path += fname;
         
         File f = new File(path);
-        if (f.exists()){
+        if (f.exists() && f.isFile()){
             System.out.println("El archivo si existe");
             return;
         }
         if (f.isDirectory()){
            mostrarDirectorio(f);
+           return;
         }
 
 		Personaje[] datos = {
