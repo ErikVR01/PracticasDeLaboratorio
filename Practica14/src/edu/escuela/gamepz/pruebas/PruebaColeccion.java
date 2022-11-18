@@ -29,7 +29,7 @@ public class PruebaColeccion{
             return;
         }
         if (f.isDirectory()){
-           // mostrarDirectorio(f);
+           mostrarDirectorio(f);
         }
 
 		Personaje[] datos = {
@@ -74,6 +74,10 @@ public class PruebaColeccion{
 
    }
    private static void guardarObjetos(File f, TreeSet ts){
+
+   }
+
+   private static void mostrarDirectorio(File f){
 
    }
 
