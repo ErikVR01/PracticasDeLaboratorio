@@ -9,7 +9,6 @@ import javax.swing.JButton;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JOptionPane;
 
 
 
@@ -23,6 +22,10 @@ public class Ventana extends JFrame{
 	private JTextField txtElem1;
 	private JTextField txtElem2;
 	private JButton btnStart;
+
+	public Ventana(){
+		initComponents();
+	}
 
 	public void initComponents(){
 		int ancho = 550;
@@ -45,9 +48,22 @@ public class Ventana extends JFrame{
 		btnStart.setPreferredSize(lblDim);
 		btnStart.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				JOptionPane.showMessageDialog(null,"Anemona Anonima");
+				btnStart.setEnabled(false);
 			}
 		});
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Practica 15");
+		setLayout(new FlowLayout());
+		setSize(ancho, alto);
+		add(lblTitulo);
+		add(lblElem1);
+		add(txtElem1);
+		add(lblElem2);
+		add(txtElem2);
+		add(btnStart);
+		add(hElem1);
+		add(hElem2);
+		setVisible(true);
 
 	}
 
