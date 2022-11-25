@@ -1,6 +1,7 @@
 package mx.com.hilos.corredores.ventanas;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
@@ -8,6 +9,8 @@ import javax.swing.JButton;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
+
 
 
 
@@ -35,15 +38,14 @@ public class Ventana extends JFrame{
 		btnStart= new JButton("Comenzar");
 		hElem1= new JLabel(" Aqui va el hilo 1 ");
 		hElem1.setBorder(BorderFactory.createLineBorder(border));
-		hElem1.setpreferredSize(lblDim);
+		hElem1.setPreferredSize(lblDim);
 		hElem2= new JLabel(" Aqui va el hilo 2 ");
 		hElem2.setBorder(BorderFactory.createLineBorder(border));
-		hElem2.setpreferredSize(lblDim);
-		btnStart.setpreferredSize(lblDim);
+		hElem2.setPreferredSize(lblDim);
+		btnStart.setPreferredSize(lblDim);
 		btnStart.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				JOptionPane.showMessageDialog(null,"Anemona Anonima");
-				System.out.println("Anemona Anonima");
 			}
 		});
 
