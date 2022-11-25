@@ -1,5 +1,6 @@
 package mx.com.hilos.corredores.hilos;
 import javax.swing.JLabel;
+import java.lang.Thread;
 public class Letra implements Runnable{
 
 	public char letra;
