@@ -1,8 +1,15 @@
 package mx.com.hilos.corredores.ventanas;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import java.awt.Color;
 import java.awt.Dimension;
-import javax.swing.BorderFactory
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
 
 public class Ventana extends JFrame{
 	private JLabel lblTitulo;
@@ -33,13 +40,14 @@ public class Ventana extends JFrame{
 		hElem2.setBorder(BorderFactory.createLineBorder(border));
 		hElem2.setpreferredSize(lblDim);
 		btnStart.setpreferredSize(lblDim);
+		btnStart.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				JOptionPane.showMessageDialog(null,"Anemona Anonima");
+				System.out.println("Anemona Anonima");
+			}
+		});
 
 	}
 
-	
 
-
-
-
-	
 }
