@@ -1,4 +1,4 @@
-public class Vehiculo {
+public class Vehiculo implements Comparable {
 	String marca;
 	int modelo;
 	float costo;
