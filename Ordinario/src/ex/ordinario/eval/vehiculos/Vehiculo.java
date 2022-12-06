@@ -1,5 +1,5 @@
 package ex.ordinario.eval.vehiculos;
-public class Vehiculo implements Comparable {
+public class Vehiculo implements Comparable <Vehiculo>{
 	String marca;
 	int modelo;
 	float costo;
@@ -20,6 +20,10 @@ public class Vehiculo implements Comparable {
 
 	public float costo(){
 		return costo;
+	}
+
+	public int compareTo(Vehiculo o){
+		
 	}
 
 	public String toString(){
