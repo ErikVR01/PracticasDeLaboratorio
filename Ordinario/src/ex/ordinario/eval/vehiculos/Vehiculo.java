@@ -22,7 +22,7 @@ public class Vehiculo {
 	}
 
 	public String toString(){
-		return marca + \t + modelo + \t + costo;
+		return marca + "\t" + modelo + "\t" + costo;
 	}
 
 }
