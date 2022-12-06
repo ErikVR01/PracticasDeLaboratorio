@@ -23,7 +23,9 @@ public class Vehiculo implements Comparable <Vehiculo>{
 	}
 
 	public int compareTo(Vehiculo o){
-		
+		if (this.marca.compareTo(o.marca)!=0) {
+			return(this.marca.compareTo(o.marca));
+		}
 	}
 
 	public String toString(){
