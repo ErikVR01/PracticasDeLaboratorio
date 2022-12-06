@@ -1,3 +1,4 @@
+package ex.ordinario.eval.vehiculos;
 public class Vehiculo implements Comparable {
 	String marca;
 	int modelo;
