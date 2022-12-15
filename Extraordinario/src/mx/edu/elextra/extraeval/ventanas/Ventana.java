@@ -9,9 +9,10 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 public class Ventana extends JFrame{
-
+	//private Procesos prc;
 
 	public Ventana(){
 		initComponents();
@@ -84,15 +85,15 @@ public class Ventana extends JFrame{
 		mb.add(miCosto);
 
 		// Crear la etiqueta lbMarca "Marca"
-		lbMarca = new JMenu("Marca");
+		lbMarca = new JLabel("Marca");
 		mb.add(lbMarca);
 
 		// Crear la etiqueta lbMarca "Costo"
-		lbCosto = new JMenu("Costo");
+		lbCosto = new JLabel("Costo");
 		mb.add(lbCosto);
 
 		// Crear la etiqueta lbRamP "Ram/Proc"
-		lbRamP = new JMenu("Ram/Proc");
+		lbRamP = new JLabel("Ram/Proc");
 		mb.add(lbRamP);
 
 		// Crear el campo de texto txMarca de tamaño 20
@@ -100,10 +101,18 @@ public class Ventana extends JFrame{
 		add(txMarca);
 
 		// Crear el campo de texto txCosto de tamaño 20
+		txCosto = new JTextField(20);
+		add(txCosto);
+
 		// Crear el campo de texto txRamP de tamaño 20
+		txRamP = new JTextField(20);
+		add(txRamP);
 
 		// Crear el botón btnPrev " <- "
+		btnPrev = new JButton("<-");
+
 		// Crear el botón btnNext " -> "
+		btnNext = new JButton("->");
 
 		// Crear la etiqueta lbIdx "0/0"
 		
