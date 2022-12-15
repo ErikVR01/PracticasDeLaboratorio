@@ -1,5 +1,14 @@
+package mx.edu.elextra.extraeval.acciones;
+
+import java.util.ArrayList;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+
 public class Procesos{
 	// ArrayList que almacena Dispositivos
+	ArrayList<Dispositivo> lista = new ArrayList<Dispositivo>();
+
 	private int idx = 0; //indice para moverse en el ArrayList
 	
 	private Procesos(){}

@@ -11,6 +11,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
+import mx.edu.elextra.extraeval.acciones.Procesos;
 public class Ventana extends JFrame{
 	//private Procesos prc;
 
@@ -67,7 +68,7 @@ public class Ventana extends JFrame{
 
 		// Agregar al miOpen la clase anónima que manda llamar al método siguientes:
 		miOpen.addActionListener(new ActionListener(){
-			public void actionPerformed(java.awt.event.ActionEvent o){
+			public void actionPerformed(ActionEvent e){
 				dispose();
 			}
 		});		
@@ -115,23 +116,43 @@ public class Ventana extends JFrame{
 		btnNext = new JButton("->");
 
 		// Crear la etiqueta lbIdx "0/0"
-		
+		lbIdx= new JLabel("0/0");
+		mb.add(lbIdx);
+
 		String espacios = "       ";
+
 		// Crear la etiqueta Label ordenando lbTipoOrd espacios+"Tipo de Ordenamiento"+espacios
-		
+		lbTipoOrd = new JLabel(espacios+"Ordenados por Marca"+espacios);
+		mb.add(lbTipoOrd);
 		// Agregar al btnPrev la clase anónima que manda llamar al método siguientes:
+		btnPrev.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
 				Procesos.getPrev(txMarca, txCosto, txRamP, lbIdx);
+			}
+		});
 
 		// Agregar al btnNext la clase anónima que manda llamar al método siguientes:
+		btnNext.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
 				Procesos.getNext(txMarca, txCosto, txRamP, lbIdx);
+			}
+		});
 
-		// Agregar al miMarca la clase anónima que manda llamar a los métodos siguientes: 
+		// Agregar al miMarca la clase anónima que manda llamar a los métodos siguientes:
+		miMarca.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
 				lbTipoOrd.setText(espacios+"Ordenados por Marca"+espacios);
 				Procesos.sortMarca();
+			}
+		});
 
-		// Agregar al miCosto la clase anónima que manda llamar a los métodos siguientes: 
+		// Agregar al miCosto la clase anónima que manda llamar a los métodos siguientes:
+		miCosto.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
 				lbTipoOrd.setText(espacios+"Ordenados por Costo"+espacios);
 				Procesos.sortCosto();
+			}
+		});
 		setSize(330,350);
 	}
 	JMenuBar mb;
