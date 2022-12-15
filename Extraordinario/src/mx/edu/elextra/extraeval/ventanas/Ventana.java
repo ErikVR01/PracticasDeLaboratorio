@@ -11,6 +11,8 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 public class Ventana extends JFrame{
+
+
 	public Ventana(){
 		initComponents();
 		setJMenuBar(mb);
@@ -49,26 +51,25 @@ public class Ventana extends JFrame{
 
 		// Crear el Menú Item miOpen "Abrir"
 		miOpen = new JMenuItem("Abrir");
-		mb.add(miOpen);
 
 		// Agregar al miOpen la clase anónima que manda llamar a los métodos siguientes:
-		miOpen.addActionListener(new ActionListener()){
+		miOpen.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				Procesos.openFile();
 				Procesos.getPrev(txMarca, txCosto, txRamP, lbIdx);
 			}
-		//
+		});
 
 		// Crear el Menú Item miOpen "Salir"
 		miSalir = new JMenuItem("Salir");
 		mb.add(miSalir);
 
 		// Agregar al miOpen la clase anónima que manda llamar al método siguientes:
-		miOpen.addActionListener(new ActionListener()){
+		miOpen.addActionListener(new ActionListener(){
 			public void actionPerformed(java.awt.event.ActionEvent o){
 				dispose();
 			}
-		}		
+		});		
 
 		// Crear el menú mnSort "Ordenar por ..."
 		mnSort = new JMenu("Ordenar por ...");
