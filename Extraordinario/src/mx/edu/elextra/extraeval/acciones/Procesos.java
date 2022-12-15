@@ -1,5 +1,10 @@
 package mx.edu.elextra.extraeval.acciones;
 
+import mx.edu.elextra.extraeval.dispositivos.Computadora;
+import mx.edu.elextra.extraeval.dispositivos.Celular;
+import mx.edu.elextra.extraeval.dispositivos.Dispositivo;
+
+
 import java.util.ArrayList;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -13,21 +18,21 @@ public class Procesos{
 	
 	private Procesos(){}
 
-	public void getPrev(JTextField JTextField JTextField JLabel){
+	public void getPrev(JTextField JTextField, JTextField JLabel){
 		// Si el tamaño de la lista es 0 llamar a JOptionPane siguiente y terminar el método
 		JOptionPane.showMessageDialog(null, "Lista vacia");
 		// restar a idx 1; en caso de ser 0 no realizar la resta
 		// establecer la etiqueta del indice en el valor que corresponda; ejemplo 1/20
 		llenarCampos(marca, costo, ramP);
 	}
-	public void getNext(JTextField JTextField JTextField JLabel){
+	public void getNext(JTextField JTextField, JTextField JLabel){
 		// Si el tamaño de la lista es 0 llamar a JOptionPane siguiente y terminar el método
 		JOptionPane.showMessageDialog(null, "Lista vacia");
 		// sumar a idx 1; en caso de ser igual al tamaño de la lista no hacer el incremento
 		// establecer la etiqueta del indice en el valor que corresponda; ejemplo 20/20
 		llenarCampos(marca, costo, ramP);
 	}
-	private void llenarCampos(JTextField JTextField JTextField ){
+	private void llenarCampos(JTextField JTextField, JTextField ){
 		// Obtener el elemento de la lista en la posición del indice
 		// Con los valores marca costo y ram/procesador mostrar en las cajas de texto
 		// Considerar que puede ser una Computadora o un Celular
