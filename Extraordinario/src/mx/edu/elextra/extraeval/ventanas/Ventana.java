@@ -35,49 +35,69 @@ public class Ventana extends JFrame{
 	private void initComponents(){
 		// Establecer el el tipo de JFrame como un FlowLayout
 		setLayout(new FlowLayout());
+
 		// Establecer el cierre de la aplicación al cerrar la ventana
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 		// Crear la Barra de Menú mb
 		mb = new JMenuBar();
 		add(mb);
+
 		// Crear el Menú mnFile "Archivo"
 		mnFile = new JMenu("Arhivo");
 		mb.add(mnFile);
+
 		// Crear el Menú Item miOpen "Abrir"
 		miOpen = new JMenuItem("Abrir");
 		mb.add(miOpen);
-		// Agregar al miOpen la clase anónima que manda llamar a los métodos siguientes: 
+
+		// Agregar al miOpen la clase anónima que manda llamar a los métodos siguientes:
+		miOpen.addActionListener(new ActionListener()){
+			public void actionPerformed(ActionEvent e) {
 				Procesos.openFile();
 				Procesos.getPrev(txMarca, txCosto, txRamP, lbIdx);
+			}
 		//
+
 		// Crear el Menú Item miOpen "Salir"
 		miSalir = new JMenuItem("Salir");
 		mb.add(miSalir);
+
 		// Agregar al miOpen la clase anónima que manda llamar al método siguientes:
+		miOpen.addActionListener(new ActionListener()){
+			public void actionPerformed(java.awt.event.ActionEvent o){
 				dispose();
+			}
+		}		
+
 		// Crear el menú mnSort "Ordenar por ..."
 		mnSort = new JMenu("Ordenar por ...");
 		mb.add(mnSort);
+
 		// Crear el Menú Item miMarca "Marca"
 		miMarca = new JMenuItem("Marca");
 		mb.add(miMarca);
+
 		// Crear el Menú Item miCosto "Costo"
 		miCosto = new JMenuItem("Costo");
 		mb.add(miCosto);
+
 		// Crear la etiqueta lbMarca "Marca"
 		lbMarca = new JMenu("Marca");
 		mb.add(lbMarca);
+
 		// Crear la etiqueta lbMarca "Costo"
 		lbCosto = new JMenu("Costo");
 		mb.add(lbCosto);
+
 		// Crear la etiqueta lbRamP "Ram/Proc"
 		lbRamP = new JMenu("Ram/Proc");
 		mb.add(lbRamP);
+
 		// Crear el campo de texto txMarca de tamaño 20
-		txMarca = new JLabel("Marca");
-		add(txMarca);
 		txMarca = new JTextField(20);
 		add(txMarca);
+
 		// Crear el campo de texto txCosto de tamaño 20
 		// Crear el campo de texto txRamP de tamaño 20
 
